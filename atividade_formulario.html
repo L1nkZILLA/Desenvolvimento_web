@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<style>
+	    label,
+		textarea {
+			font-size: 1.2rem;
+			letter-spacing: 1px;
+		}
+		
+		textarea {
+			padding: 10px;
+			max-width: 100%;
+			line-height: 1.5;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			box-shadow: 1px 1px 1px #999;
+		}
+		
+		label {
+			display: flexbox;
+			margin-bottom: 2px;
+		}
+		</style>
+<head>
+	<title>Atividade do formulário</title>
+</head>
+<body>
+	<form>
+		<h3>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h3>
+		<label for="login">Login:</label>
+		<input type="text" id="login" name="login"><br><br>
+		
+		<label for="senha">Senha:</label>
+		<input type="password" id="senha" name="senha"><br><br>
+		
+		<label for="status">Status:</label>
+		<select id="status" name="status">
+			<option value="ativo">Ativo</option>
+			<option value="inativo">Inativo</option>
+		</select><br><br>
+		
+		<label>Tipo </label>
+		<input type="radio" id="tecnico" name="tipo" value="tecnico">
+		<label for="tecnico">Técnico</label>
+		
+		<input type="radio" id="professor" name="tipo" value="professor">
+		<label for="professor">Professor</label>
+		
+		<input type="radio" id="aluno" name="tipo" value="aluno">
+		<label for="aluno">Aluno</label><br><br>
+		
+		<label for="data-criacao">Data de criação:</label>
+		<input type="date" id="data-criacao" name="data-criacao"><br><br>
+		
+		<label>Perfil </label>
+		<input type="radio" id="convidado" name="tipo" value="convidado">
+		<label for="convidado">Convidado</label>
+		<input type="radio" id="administrador" name="tipo" value="administrador">
+		<label for="administrador">Administrador</label><br><br>
+		
+
+		<div style="display: flex;">
+
+			<div style="align-items: center;align-content:center">
+		<label for="story" style=text>Observações </label>
+	</div>
+<div>
+<textarea id="observacao" name="observacao"
+          rows="5" cols="33">
+</textarea>
+</div>
+</div>
+	</form>
+</body>
+</html>
