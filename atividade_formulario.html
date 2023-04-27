@@ -5,6 +5,7 @@
 		textarea {
 			font-size: 1.2rem;
 			letter-spacing: 1px;
+			margin: 1em;
 		}
 		
 		textarea {
@@ -19,6 +20,23 @@
 		label {
 			display: flexbox;
 			margin-bottom: 2px;
+		}
+
+		.flex-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+			margin: 1em;
+		}
+
+		.flex-container2 {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+			flex-wrap: wrap;
+			margin: 1em;
 		}
 		</style>
 <head>
@@ -59,16 +77,39 @@
 		<label for="administrador">Administrador</label><br><br>
 		
 
-		<div style="display: flex;">
+		<div class="flex-container">
 
 			<div style="align-items: center;align-content:center">
-		<label for="story" style=text>Observações </label>
+		<label for="story">Observações  </label><br>
 	</div>
 <div>
 <textarea id="observacao" name="observacao"
           rows="5" cols="33">
 </textarea>
 </div>
+</div><br>
+<div class="flex-container">
+	<div>
+	<input type="checkbox" id="compras" name="compras" checked>
+	<label for="compras">Compras</label>
+  </div>
+
+  <div>
+	<input type="checkbox" id="biblioteca" name="biblioteca">
+	<label for="biblioteca">Biblioteca</label><br>
+  </div>
+  <div>
+	<input type="checkbox" id="academico" name="academico">
+	<label for="academico">Acadêmico</label>
+  </div>
+  <div>
+	<input type="checkbox" id="documentacao" name="documentacao">
+	<label for="documentacao">Documentação</label>
+  </div>
+  <div>
+	<input type="checkbox" id="rh" name="rh">
+	<label for="rh">Recursos Humanos</label>
+  </div>
 </div>
 	</form>
 </body>
